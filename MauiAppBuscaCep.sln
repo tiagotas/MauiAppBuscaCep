@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppBuscaCep", "MauiAppBuscaCep\MauiAppBuscaCep.csproj", "{110BD1D9-5E68-4B45-ADE2-719E8815D5C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{110BD1D9-5E68-4B45-ADE2-719E8815D5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110BD1D9-5E68-4B45-ADE2-719E8815D5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110BD1D9-5E68-4B45-ADE2-719E8815D5C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{110BD1D9-5E68-4B45-ADE2-719E8815D5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110BD1D9-5E68-4B45-ADE2-719E8815D5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110BD1D9-5E68-4B45-ADE2-719E8815D5C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {095A18DA-F16A-4498-8935-46B39EA2BEF4}
+	EndGlobalSection
+EndGlobal
