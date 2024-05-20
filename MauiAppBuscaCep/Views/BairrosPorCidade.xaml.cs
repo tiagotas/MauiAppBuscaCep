@@ -6,10 +6,11 @@ namespace MauiAppBuscaCep.Views;
 
 public partial class BairrosPorCidade : ContentPage
 {
-    ObservableCollection<Cidade> lista_cidades = new ObservableCollection<Cidade>();
+    ObservableCollection<Cidade> lista_cidades = 
+        new ObservableCollection<Cidade>();
 
-    ObservableCollection<Bairro> lista_bairros = new ObservableCollection<Bairro>();
-
+    ObservableCollection<Bairro> lista_bairros = 
+        new ObservableCollection<Bairro>();
 
     public BairrosPorCidade()
     {
@@ -26,9 +27,12 @@ public partial class BairrosPorCidade : ContentPage
         {
             Picker disparador = sender as Picker;
 
-            string estado_selecionado = disparador.SelectedItem as string;
+            string? estado_selecionado = 
+                disparador.SelectedItem as string;
 
-            List<Cidade> arr_cidades = await DataService.GetCidadesByEstado(estado_selecionado);
+            List<Cidade> arr_cidades = 
+                await DataService.GetCidadesByEstado(
+                    estado_selecionado);
 
             lista_cidades.Clear();
 
@@ -37,20 +41,25 @@ public partial class BairrosPorCidade : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Ops", ex.Message, "OK");
+            await DisplayAlert("Ops", 
+                ex.Message, "OK");
         }
 
     }
 
-    private async void pck_cidade_SelectedIndexChanged(object sender, EventArgs e)
+    private async void pck_cidade_SelectedIndexChanged(
+        object sender, EventArgs e)
     {
         try
         {
             Picker disparador = sender as Picker;
 
-            Cidade cidade_selecionada = disparador.SelectedItem as Cidade;
+            Cidade cidade_selecionada = 
+                disparador.SelectedItem as Cidade;
 
-            List<Bairro> arr_bairros = await DataService.GetBairrosByIdCidade(cidade_selecionada.id_cidade);
+            List<Bairro> arr_bairros = 
+                await DataService.GetBairrosByIdCidade(
+                    cidade_selecionada.id_cidade);
 
             lista_bairros.Clear();
 
