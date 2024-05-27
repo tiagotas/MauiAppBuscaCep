@@ -21,7 +21,9 @@
             <Button Grid.Row="2" Grid.Column="0" 
                     Text="Buscar Ruas de Bairro" />
 
-            <Button Grid.Row="2" Grid.Column="1" Text="Busca Endereço Pelo CEP" Clicked="Button_Clicked_1" />
+            <Button Grid.Row="2" Grid.Column="1" 
+                    Text="Busca Endereço Pelo CEP" 
+                    Clicked="Button_Clicked_1" />
 
         </Grid>
     </VerticalStackLayout>

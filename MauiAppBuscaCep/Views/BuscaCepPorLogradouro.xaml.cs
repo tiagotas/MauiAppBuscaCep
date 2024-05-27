@@ -21,7 +21,6 @@ public partial class BuscaCepPorLogradouro : ContentPage
                     txt_logradouro.Text);
 
             lst_ceps.ItemsSource = arr_ceps;
-
         }
         catch (Exception ex)
         {

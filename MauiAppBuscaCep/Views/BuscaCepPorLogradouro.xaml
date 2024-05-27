@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppBuscaCep.Views.BuscaCepPorLogradouro"
              Title="BuscaCepPorLogradouro">
+    
     <VerticalStackLayout>
+        
+        
         <StackLayout Orientation="Horizontal">
             <SearchBar x:Name="txt_logradouro"
                Placeholder="Qual é sua rua?" />
