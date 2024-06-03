@@ -98,7 +98,8 @@ namespace MauiAppBuscaCep.Services
             using (HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = await client.GetAsync(
-                    "https://cep.metoda.com.br/logradouro/by-bairro?id_cidade=" + id_cidade + "&bairro=" + bairro);
+                    "https://cep.metoda.com.br/logradouro/by-bairro?id_cidade=" + id_cidade 
+                    + "&bairro=" + bairro);
 
                 if (response.IsSuccessStatusCode)
                 {
